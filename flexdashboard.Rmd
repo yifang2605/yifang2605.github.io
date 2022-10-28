@@ -1,105 +1,94 @@
 ---
-title: "Plotly"
+title: "NY_NOAA Dashboard"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
-# packages
-
-```{r}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
+library(flexdashboard)
 library(plotly)
 ```
 
-# data wrangling
+```{r, include = FALSE}
+data("ny_noaa")
 
-```{r}
-
-data("instacart")
-
-instacart = 
-  instacart %>% 
-  as_tibble(instacart)
-
-
-data("nyc_airbnb")
-nyc_airbnb = 
-  nyc_airbnb %>% 
+ny_noaa = 
+  ny_noaa %>% 
+  as_tibble(ny_noaa) %>% 
+  drop_na() %>% 
+  sample_n(1000) %>% 
+  separate(date, c('year', 'month', 'day'), convert = TRUE, remove = FALSE) %>% 
   mutate(
-    rating = review_scores_location / 2
-    ) %>% 
-  select(
-    borough = neighbourhood_group, 
-    neighbourhood, price, room_type,
-    lat, long, rating
-    ) %>% 
-  filter(
-    borough == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500
-  ) %>% 
-  drop_na(rating)
+    month = month.name[month], 
+    month = factor(month, levels = month.name),
+    tmax = as.numeric(tmax) / 10,
+    tmin = as.numeric(tmin) / 10,
+    prcp = prcp / 10)
 ```
 
-# scatterplot
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Box plot
 
 ```{r}
-nyc_airbnb %>% 
-  mutate(
-    text_label = str_c("Neighborhood: ", neighbourhood, 
-                       "Price: $", price, 
-                       "\nRating: ", rating)
-    )%>% 
+ny_noaa %>% 
+  group_by(month) %>%
   plot_ly(
-    x = ~lat, 
-    y = ~long, 
-    color = ~price,
-    type = "scatter", 
-    mode = "markers",
-    alpha = .5, 
-    text = ~text_label
-  )
-```
-
-# boxplots
-
-```{r}
-nyc_airbnb %>% 
-  mutate(
-    neighbourhood = fct_reorder(neighbourhood, price)
-    ) %>% 
-  plot_ly(
-    y = ~price, 
-    color = ~neighbourhood,
+    y = ~tmax, 
+    color = ~month,
     type = "box", 
-    colors = "viridis")
+    colors = "viridis") %>% 
+  layout(title = "Daily Maximum temperature(°C) by month",
+         xaxis = list (title = "Month", 
+                       zeroline = FALSE),
+         yaxis = list (title = "Daily Maximum temperature(°C)",
+                       zeroline = FALSE))
 ```
 
 
-# bar plot
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Scatter plot
 
 ```{r}
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
+ny_noaa %>% 
   mutate(
-    neighbourhood = fct_reorder(neighbourhood, n)
-    ) %>%
+    text_label = str_c("Date: ", date)
+  ) %>% 
   plot_ly(
-    x = ~neighbourhood, 
-    y = ~n,
-    type = "bar")
+    x = ~tmax, 
+    y = ~tmin,
+    type = 'scatter',
+    mode = "markers",
+    alpha = .5,
+    text = ~text_label
+    ) %>% 
+  layout(title = "Maximum vs Minimum Daily temperature",
+         xaxis = list (title = "Daily Maximum temperature(°C)", 
+                       zeroline = FALSE),
+         yaxis = list (title = "Daily Minimum temperature(°C)",
+                       zeroline = FALSE))
 ```
 
-
-# ggplotly
-
+### Bar plot
 ```{r}
-ggp_scatterplot = 
-  nyc_airbnb %>% 
-  ggplot(aes(x = lat, y = long, color = price)) + 
-  geom_point()
-ggplotly(ggp_scatterplot)
+ny_noaa %>% 
+  group_by(year) %>% 
+  summarise(
+    n_date = n()
+  ) %>% 
+  plot_ly(
+    x = ~year, 
+    y = ~n_date,
+    type = 'bar'
+    ) %>% 
+  layout(title = "Number of days recorded for each year",
+         yaxis = list (title = "Number of days"))
 ```
+

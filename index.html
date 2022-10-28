@@ -11,7 +11,7 @@
 
 
 
-<title>resume.knit</title>
+<title>index.knit</title>
 
 <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -228,6 +231,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -235,6 +301,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -294,153 +370,20 @@ $(document).ready(function () {
 </div>
 
 
-<h1 style="text-align: center;">
-Yi Fang
-</h1>
-<center>
-50 Haven Ave, New York, NY 10032 | (646)750-8743 | <a
-href="mailto:yifang2605@gmail.com"
-class="email">yifang2605@gmail.com</a>
-</center>
-<div id="education" class="section level3">
-<h3>EDUCATION</h3>
-<td>
-<div style="float:left;width:60%;text-align:left; ">
-<b> Columbia University, Mailman School of Public Health </b> New York,
-NY
+<div id="about-me" class="section level2">
+<h2>About me</h2>
+<p>Click <a href="Resume.html">here</a> to see my Resume</p>
 </div>
-<div style="float:right;width:40%;text-align:right;">
-Expected May 2023
-</div>
-</td>
-<p>Master of Public Health in Biostatistics, <em>Certificate in Advanced
-Epidemiology</em></p>
-<td>
-<div style="float:left;width:60%;text-align:left; ">
-<b> Nanjing Normal University </b> Nanjing, China
-</div>
-<div style="float:right;width:40%;text-align:right;">
-Jul 2021
-</div>
-</td>
-<td>
-<div style="float:left;width:49%;text-align:left; ">
-Bachelor of Science in Biology
-</div>
-<div style="float:right;width:49%;text-align:right;">
-GPA: 3.67/4.0
-</div>
-</td>
-<p><br> </br></p>
-</div>
-<div id="internship-experience" class="section level3">
-<h3>INTERNSHIP EXPERIENCE</h3>
-<td>
-<div style="float:left;width:49%;text-align:left; ">
-<b> New York State Psychiatric Institute </b> NY, US
-</div>
-<div style="float:right;width:49%;text-align:right;">
-Summer 2022-Present
-</div>
-</td>
-<p><em>Research Technician</em></p>
-<ul>
-<li>Prepared and managed an administrative dataset containing
-participation and treatment information, including approximately 400
-variables and 6,000 records.</li>
-<li>Reviewed, integrated, and wrote programs using statistical software
-to generate descriptive statistics and visualizations for quarterly data
-reports which evaluate site performance.</li>
-<li>Drafted quarterly data report for 10 study site and assisted in
-preparation of conference abstracts, presentations, and manuscripts for
-publication.</li>
-</ul>
-<td>
-<div style="float:left;width:49%;text-align:left; ">
-<b> Jiangsu Carephar Pharmaceutical Ltd. Company </b> Nanjing, China
-</div>
-<div style="float:right;width:49%;text-align:right;">
-Summer 2020
-</div>
-</td>
-<p><em>International Drug Registration Officer</em></p>
-<ul>
-<li>Reviewed and managed registration documents including Case Report
-Form, Master Files.</li>
-<li>Collaborated with CROs, received and reviewed documents from them,
-convey or help solve issues.</li>
-<li>Assisted in the evaluation and development of strategies to register
-and market drug products in different countries.</li>
-</ul>
-<td>
-<div style="float:left;width:49%;text-align:left; ">
-<b> Wuhan Bioser Biotech Ltd. Company </b> Nanjing, China
-</div>
-<div style="float:right;width:49%;text-align:right;">
-Fall 2018
-</div>
-</td>
-<p><em>Research Assistant</em></p>
-<ul>
-<li>Perform electrophoresis on DNA or RNA samples, recorded and managed
-electrophoresis results.</li>
-<li>Performed and recorded qPCR results, analyzed the results to assess
-the expression of target genes.</li>
-</ul>
-</div>
-<div id="research-experience" class="section level3">
-<h3>RESEARCH EXPERIENCE</h3>
-<td>
-<div style="float:left;width:49%;text-align:left; ">
-<b> Comparative Mitochondrial Genome Analysis of Calidris </b>
-</div>
-<div style="float:right;width:49%;text-align:right;">
-May 2019-Jun 2020
-</div>
-</td>
-<p><em>Team Leader</em></p>
-<ul>
-<li>Developed research strategies and followed up on research progress
-by organizing and participating in weekly group discussions</li>
-<li>Annotated and analyzed mitochondrial genomes of 5 species by
-aligning sequences with annotated mitochondrial genome data of Calidris
-ruficollis and inferred phylogenetic tree.</li>
-<li>Interpreted the research findings and wrote the manuscript for the
-comparative analysis.</li>
-</ul>
-<p style="text-align: right;">
-</p>
-<td>
-<div style="float:left;width:49%;text-align:left; ">
-<b> Survey on weight loss condition of college students </b>
-</div>
-<div style="float:right;width:49%;text-align:right;">
-Fall 2019
-</div>
-</td>
-<p><em>Group Leader</em></p>
-<ul>
-<li>Designed and released test questionnaires using an online
-questionnaire platform, analyzed the collected dataset which includes
-over 50 records, and measured reliability of the questionnaires using
-SPSS.</li>
-<li>Revised the questionnaire with the professor to improve its
-reliability and validity, repeated the process for more than 3 times and
-obtained a qualified questionnaire.</li>
-</ul>
-</div>
-<div id="skills" class="section level3">
-<h3>SKILLS</h3>
-<ul>
-<li>Languages: Chinese Japanese English</li>
-<li>Programming Languages: Python R SQL</li>
-<li>Software: SAS, STATA, SPSS, STATISTICA, MS Office</li>
-<li>Certificate: SAS Base Programming</li>
-</ul>
+<div id="flexdashboard" class="section level2">
+<h2>flexdashboard</h2>
+<p><a href="flexdashboard.html">Here’s</a> a flexdashboard I made using
+using <a href="doi:10.7289/V5D21VHZ">NY NOAA</a> dataset</p>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -473,6 +416,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

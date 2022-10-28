@@ -1,5 +1,4 @@
 ---
-title: "My website"
 output: 
   html_document:
     toc: true
@@ -7,10 +6,10 @@ output:
     theme: cerulean
 ---
 
-# My Resume
+## About me
 
 Click [here](Resume.html) to see my Resume
 
-# flexdashboard
+## flexdashboard
 
-[Here's](flexdashboard.html) a flexdashboard
+[Here's](flexdashboard.html) a flexdashboard I made using using [NY NOAA](doi:10.7289/V5D21VHZ) dataset
