@@ -11,8 +11,6 @@ navbar:
       href: http://github.com/yifang2605/
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/-yi-fang/
-    - icon: "NY_NOAA Dashboard"
-      href: flexdashboard.html
 output:
   html_document:
     theme: cerulean
