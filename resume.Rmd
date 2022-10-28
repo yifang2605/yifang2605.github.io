@@ -1,0 +1,143 @@
+---
+output: html_document
+---
+
+<h1 style="text-align: center;">Yi Fang</h1>
+
+<center> 50 Haven Ave, New York, NY 10032 | (646)750-8743 | yifang2605@gmail.com </center>
+
+### EDUCATION
+
+<td> 
+  <div style="float:left;width:60%;text-align:left; ">
+  <b>
+  Columbia University, Mailman School of Public Health
+  </b> 
+  New York, NY
+  </div> 
+  <div style="float:right;width:40%;text-align:right;">
+  Expected May 2023
+  </div> 
+</td>
+
+Master of Public Health in Biostatistics, *Certificate in Advanced Epidemiology*
+
+<td> 
+  <div style="float:left;width:60%;text-align:left; ">
+  <b>
+  Nanjing Normal University 
+  </b> 
+  Nanjing, China
+  </div> 
+  <div style="float:right;width:40%;text-align:right;">
+  Jul 2021
+  </div> 
+</td>
+
+<td> 
+  <div style="float:left;width:49%;text-align:left; ">
+  Bachelor of Science in Biology
+  </div> 
+  <div style="float:right;width:49%;text-align:right;">
+  GPA: 3.67/4.0
+  </div> 
+</td>
+
+<br> </br>
+
+###  INTERNSHIP EXPERIENCE
+<td> 
+  <div style="float:left;width:49%;text-align:left; ">
+  <b>
+  New York State Psychiatric Institute
+  </b> 
+  NY, US
+  </div> 
+  <div style="float:right;width:49%;text-align:right;">
+  Summer 2022-Present
+  </div> 
+</td>
+
+*Research Technician*
+
+- Prepared and managed an administrative dataset containing participation and treatment information, including approximately 400 variables and 6,000 records.
+-	Reviewed, integrated, and wrote programs using statistical software to generate descriptive statistics and visualizations for quarterly data reports which evaluate site performance. 
+-	Drafted quarterly data report for 10 study site and assisted in preparation of conference abstracts, presentations, and manuscripts for publication.
+
+<td> 
+  <div style="float:left;width:49%;text-align:left; ">
+  <b>
+  Jiangsu Carephar Pharmaceutical Ltd. Company
+  </b> 
+  Nanjing, China
+  </div> 
+  <div style="float:right;width:49%;text-align:right;">
+  Summer 2020
+  </div> 
+</td>
+
+*International Drug Registration Officer* 
+
+-	Reviewed and managed registration documents including Case Report Form, Master Files. 
+-	Collaborated with CROs, received and reviewed documents from them, convey or help solve issues. 
+-	Assisted in the evaluation and development of strategies to register and market drug products in different countries.
+
+
+<td> 
+  <div style="float:left;width:49%;text-align:left; ">
+  <b>
+  Wuhan Bioser Biotech Ltd. Company
+  </b> 
+  Nanjing, China
+  </div> 
+  <div style="float:right;width:49%;text-align:right;">
+  Fall 2018
+  </div> 
+</td>
+
+*Research Assistant*
+
+-	Perform electrophoresis on DNA or RNA samples, recorded and managed electrophoresis results.
+-	Performed and recorded qPCR results, analyzed the results to assess the expression of target genes.
+
+### RESEARCH EXPERIENCE
+<td> 
+  <div style="float:left;width:49%;text-align:left; ">
+  <b>
+  Comparative Mitochondrial Genome Analysis of Calidris
+  </b>
+  </div> 
+  <div style="float:right;width:49%;text-align:right;">
+  May 2019-Jun 2020
+  </div> 
+</td>
+
+*Team Leader*  
+
+-	Developed research strategies and followed up on research progress by organizing and participating in weekly group discussions
+-	Annotated and analyzed mitochondrial genomes of 5 species by aligning sequences with annotated mitochondrial genome data of Calidris ruficollis and inferred phylogenetic tree.
+-	Interpreted the research findings and wrote the manuscript for the comparative analysis.
+
+<p style='text-align: right;'>  </p>
+<td> 
+  <div style="float:left;width:49%;text-align:left; ">
+  <b>
+  Survey on weight loss condition of college students
+  </b>
+  </div> 
+  <div style="float:right;width:49%;text-align:right;">
+  Fall 2019
+  </div> 
+</td>
+
+*Group Leader*   
+
+-	Designed and released test questionnaires using an online questionnaire platform, analyzed the collected dataset which includes over 50 records, and measured reliability of the questionnaires using SPSS.
+-	Revised the questionnaire with the professor to improve its reliability and validity, repeated the process for more than 3 times and obtained a qualified questionnaire.
+
+### SKILLS
+
+- Languages: Chinese Japanese English
+- Programming Languages: Python R SQL
+- Software: SAS, STATA, SPSS, STATISTICA, MS Office
+- Certificate: SAS Base Programming 
