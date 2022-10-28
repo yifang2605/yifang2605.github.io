@@ -1,0 +1,16 @@
+---
+title: "My website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# My Resume
+
+Click [here](Resume.html) to see my Resume
+
+# flexdashboard
+
+[Here's](flexdashboard.html) a flexdashboard

@@ -1,0 +1,16 @@
+name: "My page"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Resume"
+      href: resume.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<yifang2605@gmail.com>
+    - icon: fa-github fa-lg
+      href: http://github.com/yifang2605/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/-yi-fang/
+output:
+  html_document:
+    theme: cerulean
